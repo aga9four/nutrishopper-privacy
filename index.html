@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informativa sulla Privacy - NutriShopper</title>
-    <style>
-        body { font-family: Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        h1 { color: #006C50; }
-        h2 { color: #4C6358; margin-top: 30px; }
-    </style>
-</head>
-<body>
-    <h1>Informativa sulla Privacy per NutriShopper</h1>
-    <p>Ultimo aggiornamento: 22 settembre 2026</p>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Informativa sulla Privacy - NutriShopper</title>
+<style>body{font-family:system-ui,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px;line-height:1.6;color:#1b1c1b}h1{color:#006C50}h2{color:#006C50;margin-top:28px}a{color:#006C50}</style></head><body>
+<h1>Informativa sulla Privacy per NutriShopper</h1>
+<p><em>Ultimo aggiornamento: 24 settembre 2026</em></p>
+<p>La presente informativa descrive come l'app Android NutriShopper ("l'App", pacchetto <code>com.nutrishopper.app</code>) tratta i dati degli utenti. Titolare del trattamento: lo sviluppatore di NutriShopper, contattabile all'indirizzo <a href="mailto:aga9four@gmail.com">aga9four@gmail.com</a>.</p>
 
-    <p>La presente Informativa sulla Privacy descrive le modalità di gestione dell'applicazione <strong>NutriShopper</strong> ("l'App") in merito al trattamento dei dati degli utenti.</p>
+<h2>1. Dati raccolti e finalità</h2>
+<ul>
+<li><strong>Account (indirizzo email e identificativo utente)</strong>: per accedere all'App è necessario creare un account con email e password oppure con "Accedi con Google". L'autenticazione è gestita da Google Firebase Authentication. Usiamo questi dati solo per consentirti di accedere e per separare i dati dei diversi utenti sullo stesso dispositivo. Con "Accedi con Google" riceviamo email e identificativo dell'account; nome e foto non vengono salvati dall'App.</li>
+<li><strong>Richieste alla funzione "Chef IA"</strong>: quando usi le funzioni di intelligenza artificiale (generazione o adattamento di ricette, sostituzione di ingredienti, interpretazione degli alimenti da escludere), il testo della richiesta — ad esempio ingredienti, alimenti da evitare, tipo di dieta e obiettivi calorici/di macronutrienti del pasto — viene inviato a Google tramite Firebase AI Logic (Gemini API) per generare la risposta. Non inviamo email, nome, età, peso o altri dati identificativi. Poiché l'App utilizza il livello gratuito della Gemini API, Google può utilizzare i contenuti delle richieste per migliorare i propri servizi, secondo i <a href="https://ai.google.dev/gemini-api/terms">Termini aggiuntivi della Gemini API</a>. Non inserire dati personali nei campi di testo liberi.</li>
+<li><strong>Identificativi tecnici dell'app</strong>: Firebase App Check (Play Integrity), Remote Config e Firestore utilizzano identificativi tecnici dell'installazione per verificare che le richieste provengano dall'App autentica, prevenire abusi e distribuire il catalogo ricette. Non sono usati per pubblicità o profilazione.</li>
+</ul>
 
-    <h2>1. Raccolta e Utilizzo dei Dati</h2>
-    <p>NutriShopper è un'applicazione progettata per la creazione di piani alimentari personalizzati e liste della spesa intelligenti. <strong>L'applicazione non raccoglie, memorizza o trasmette alcun dato personale o biometrico su server esterni o di terze parti.</strong></p>
+<h2>2. Dati salvati solo sul dispositivo</h2>
+<p>Profilo fisico (sesso, età, altezza, peso, livello di attività, obiettivo, giorni di allenamento), supermercato scelto, alimenti esclusi, piano alimentare, lista della spesa, storico del peso e ricette salvate sono memorizzati <strong>esclusivamente sul tuo dispositivo</strong> e non vengono trasmessi ai nostri server. Il backup automatico Android è disattivato per questi dati.</p>
 
-    <h2>2. Archiviazione Locale (LocalStorage)</h2>
-    <p>Tutti i dati inseriti dall'utente (inclusi dati fisici come età, altezza, peso, preferenze alimentari e supermercato selezionato) vengono salvati esclusivamente in modo locale sul dispositivo dell'utente tramite la tecnologia <code>localStorage</code> del browser/dispositivo. Tutti i dati rimangono sotto il totale controllo dell'utente e possono essere eliminati in qualsiasi momento cancellando la cache del browser o utilizzando l'apposita funzione di reset all'interno dell'applicazione.</p>
+<h2>3. Condivisione con terze parti</h2>
+<p>Non vendiamo dati e non li condividiamo con inserzionisti. L'App non contiene pubblicità. I dati indicati al punto 1 sono trattati per nostro conto da Google LLC (Firebase e Gemini API) in qualità di fornitore di servizi: <a href="https://firebase.google.com/support/privacy">Privacy e sicurezza in Firebase</a>, <a href="https://policies.google.com/privacy">Norme sulla privacy di Google</a>. Le funzioni di condivisione (WhatsApp, PDF, appunti) inviano i contenuti solo dove scegli tu.</p>
 
-    <h2>3. Servizi di Terze Parti e Pubblicità</h2>
-    <p>L'App non integra SDK pubblicitari di terze parti, non effettua profilazione degli utenti e non condivide alcuna informazione con inserzionisti.</p>
+<h2>4. Sicurezza</h2>
+<p>Tutte le comunicazioni tra l'App e i servizi Google avvengono tramite connessioni cifrate (HTTPS/TLS). Le password sono gestite da Firebase Authentication e non sono mai accessibili allo sviluppatore.</p>
 
-    <h2>4. Sicurezza</h2>
-    <p>Poiché nessun dato personale viene trasmesso via internet o salvato su database remoti di proprietà dello sviluppatore, non sussistono rischi di intercettazione o violazione dei dati personali da parte di server esterni.</p>
+<h2>5. Conservazione ed eliminazione</h2>
+<p>L'account resta attivo finché non lo elimini. Puoi eliminarlo in qualsiasi momento dall'App: <strong>menu ⋮ → Elimina account</strong>. L'eliminazione cancella definitivamente l'account Firebase e tutti i dati salvati sul dispositivo. In alternativa puoi richiederla seguendo le istruzioni alla pagina <a href="elimina-account.html">Eliminazione account</a>. Disinstallando l'App vengono cancellati tutti i dati locali.</p>
 
-    <h2>5. Modifiche all'Informativa</h2>
-    <p>Eventuali modifiche alla presente informativa saranno pubblicate su questa pagina. Si consiglia di consultarla periodicamente.</p>
+<h2>6. Minori</h2>
+<p>L'App non è destinata a minori di 18 anni.</p>
 
-    <h2>6. Contatti</h2>
-    <p>Per qualsiasi domanda o chiarimento in merito alla privacy, è possibile contattare lo sviluppatore tramite l'indirizzo email di supporto associato alla pagina dello sviluppatore sul Google Play Store.</p>
-</body>
-</html>
+<h2>7. I tuoi diritti (GDPR)</h2>
+<p>Puoi chiedere accesso, rettifica, cancellazione, limitazione od opposizione al trattamento scrivendo a <a href="mailto:aga9four@gmail.com">aga9four@gmail.com</a>, e hai diritto di proporre reclamo al Garante per la protezione dei dati personali.</p>
+
+<h2>8. Avvertenza</h2>
+<p>I piani e le ricette sono indicativi e non sostituiscono il parere di un medico o di un nutrizionista.</p>
+
+<h2>9. Modifiche</h2>
+<p>Eventuali modifiche saranno pubblicate su questa pagina con la data di aggiornamento.</p>
+</body></html>
