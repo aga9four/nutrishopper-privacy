@@ -10,6 +10,7 @@
 <ul>
 <li><strong>Account (indirizzo email e identificativo utente)</strong>: per accedere all'App è necessario creare un account con email e password oppure con "Accedi con Google". L'autenticazione è gestita da Google Firebase Authentication. Usiamo questi dati solo per consentirti di accedere e per separare i dati dei diversi utenti sullo stesso dispositivo. Con "Accedi con Google" Firebase riceve anche il nome del profilo Google; l'App non lo usa e non salva la foto.</li>
 <li><strong>Richieste alla funzione "Chef IA"</strong>: quando usi le funzioni di intelligenza artificiale (generazione o adattamento di ricette, sostituzione di ingredienti, interpretazione degli alimenti da escludere), il testo della richiesta — ad esempio ingredienti, alimenti da evitare, tipo di dieta e obiettivi calorici/di macronutrienti del pasto — viene inviato a Google tramite Firebase AI Logic (Gemini API) per generare la risposta. Non inviamo email, nome, età, peso o altri dati identificativi. Poiché l'App utilizza il livello gratuito della Gemini API, Google può utilizzare i contenuti delle richieste per migliorare i propri servizi, secondo i <a href="https://ai.google.dev/gemini-api/terms">Termini aggiuntivi della Gemini API</a>. Non inserire dati personali nei campi di testo liberi.</li>
+<li><strong>Contatore giornaliero delle richieste IA</strong>: per applicare i limiti gratuiti dello Chef IA salviamo su Google Cloud Firestore, associato all'identificativo dell'account, solo il numero di richieste fatte nel giorno corrente per ciascuna funzione. Non contiene il testo delle richieste. Viene cancellato con l'eliminazione dell'account (se risale a un giorno precedente) ed è sovrascritto ogni giorno.</li>
 <li><strong>Identificativi tecnici dell'app</strong>: Firebase App Check (Play Integrity), Remote Config e Firestore utilizzano identificativi tecnici dell'installazione per verificare che le richieste provengano dall'App autentica, prevenire abusi e distribuire il catalogo ricette. Non sono usati per pubblicità o profilazione.</li>
 </ul>
 
@@ -34,7 +35,7 @@
 <h2>7. I tuoi diritti (GDPR)</h2>
 <p>Puoi chiedere accesso, rettifica, cancellazione, limitazione od opposizione al trattamento scrivendo a <a href="mailto:nutrishopperitalia@gmail.com">nutrishopperitalia@gmail.com</a>, e hai diritto di proporre reclamo al Garante per la protezione dei dati personali.</p>
 
-<h2>8. Natura del servizio e limitazione di responsabilità</h2>
+<h2 id="avvertenze">8. Natura del servizio e limitazione di responsabilità</h2>
 <ul>
 <li><strong>Non è una dieta prescritta.</strong> NutriShopper propone ricette, porzioni e una lista della spesa calcolate automaticamente con formule generali (fabbisogno stimato con l'equazione di Mifflin-St Jeor e ripartizioni standard di macronutrienti). Il piano non è elaborato da un medico, dietista o nutrizionista e non tiene conto della tua storia clinica.</li>
 <li><strong>Non sostituisce il parere di un professionista.</strong> Prima di cambiare alimentazione consulta un medico o un professionista della nutrizione, in particolare in caso di patologie (es. diabete, malattie renali, cardiovascolari), gravidanza o allattamento, età inferiore ai 18 anni, allergie o intolleranze gravi, disturbi del comportamento alimentare, assunzione di farmaci o integratori.</li>
